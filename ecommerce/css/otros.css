@@ -1,0 +1,112 @@
+* {
+    padding:0;
+    margin:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+	margin: 0px;
+	padding: 0px;
+    background:#2e2e2e url(/img/fondo.gif) repeat;
+    color:#838383; 
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a, a:hover, a:focus {
+    -webkit-transition: color 0.4s ease 0s;
+    transition: color 0.4s ease 0s;
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    margin-top: 10px;
+     height: 150px;
+    position: relative;
+}
+
+nav{
+    top :20px;
+    position: absolute;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+nav ul {
+    list-style: none;
+}
+nav > ul {
+    display: table;
+    overflow: hidden;
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+nav > ul li {
+    display: table-cell;
+}
+
+nav > ul > li:hover > ul {
+    display: block;
+    height: 100%;
+}
+nav > ul > li > ul { 
+    display: block;
+    left: 0;
+    right: 0;
+    position: absolute;
+    overflow: hidden;
+    height: 0%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+} 
+
+nav > ul li a {
+    color: white;
+    display: block;
+    line-height: 20px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav > ul > li > ul > li a:hover{
+    background-color: green;
+}
+nav > ul > li > a span {
+    background-color: #174459;
+    display: block;
+    height: 100%; 
+    width:100%;
+    left: 0;
+    top:-55px;
+    position: absolute;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+     
+}
+nav > ul > li > a span i{
+    display: block !important;
+    line-height: 60px !important;
+}
+nav > ul > li > a:hover > span{
+    top:0px;
+}

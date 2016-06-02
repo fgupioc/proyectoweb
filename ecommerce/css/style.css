@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+   /* background: #2e2e2e url('/img/fondo.gif') repeat;
+    color: #838383;*/
+    background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a, a:hover, a:focus {
+    -webkit-transition: color 0.4s ease 0s;
+    transition: color 0.4s ease 0s;
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.menu_bar {
+    display: none;
+}
+
+header {
+    width: 100%;
+}
+
+header nav {
+    background-color: rgba(0, 0, 0, .25);
+    z-index: 1000;
+    max-width: 1000px;
+    width: 95%;
+    margin: 20px auto;
+    padding: 1px 0;
+    border: solid #b7473b;
+    border-width: 1px 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+
+#main-menu ul {
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.lista-menu {
+    list-style: none;
+
+}
+
+.lista-menu li {
+    display: inline-block;
+    position: relative;
+}
+
+.lista-menu li:hover {
+    background-color: #E6344A;
+}
+
+.lista-menu li a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.lista-menu li a span {
+    margin-right: 10px;
+}
+
+/*hombre*/
+.lista-menu li:hover .children-hombre, li:hover .children-mujer, li:hover .children-boy, li:hover .children-deporte, li:hover .children-escolar {
+    display: block;
+}
+
+.lista-menu li .children-hombre, .children-mujer, .children-boy, .children-deporte, .children-escolar {
+    display: none;
+    background: #ff434a;
+    position: absolute;
+    width: 150%;
+    z-index: 10000;
+}
+
+.lista-menu li .children-hombre li, .children-mujer li, .children-boy li, .children-deporte li, .children-escolar li {
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+.lista-menu li .children-hombre li a, .children-mujer li a, .children-boy li a, .children-deporte li a, .children-escolar li a {
+    display: block;
+}
+
+.lista-menu li .children-hombre li a span, .children-mujer li a span, .children-boy li a span, .children-deporte li a span, .children-escolar li a span {
+    float: right;
+    position: relative;
+    top: 3px;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+/*header nav ul li .caret {
+    position: relative;
+    top:3px;
+    margin-left:10px;
+    margin-right:0px;
+}*/
+.img-banner {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.product-head {
+    text-align: left;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 14px 20px;
+    margin: 0 0 20px;
+    font-size: 24px;
+    background: #191919;
+    color: #ff434a;
+    text-transform: uppercase;
+}
+
+.owl-controls .owl-buttons div {
+    position: absolute;
+    background: none;
+    font-size: 26px;
+}
+
+.owl-controls .owl-buttons .owl-prev, .owl-controls .owl-buttons .owl-next {
+    top: -61px;
+    color: #ff434a;
+}
+
+.owl-controls .owl-buttons .owl-prev {
+    right: 60px;
+}
+
+.owl-controls .owl-buttons .owl-next {
+    right: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        padding-top: 80px;
+    }
+
+    .menu_bar {
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background: #E6344A;
+    }
+
+    .menu_bar .bt-menu {
+        display: block;
+        padding: 20px;
+        color: #fff;
+        overflow: hidden;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .menu_bar span {
+        float: right;
+        font-size: 40px;
+    }
+
+    header nav {
+        width: 80%;
+        height: calc(100% - 80px);
+        position: fixed;
+        right: 100%;
+        margin: 0;
+        overflow: scroll;
+    }
+
+    .lista-menu li {
+        display: block;
+        border-bottom: 1px solid rgba(255, 255, 255, .5);
+    }
+
+    .lista-menu li a {
+        display: block;
+    }
+
+    .lista-menu li:hover .children-hombre, li:hover .children-mujer, li:hover .children-boy, li:hover .children-deporte, li:hover .children-escolar {
+        display: none;
+    }
+
+    .lista-menu li .children-hombre, .children-mujer, .children-boy, .children-deporte, .children-escolar {
+        width: 100%;
+        position: relative;
+    }
+
+    .lista-menu li .children-hombre li a, .children-mujer li a, .children-boy li a, .children-deporte li a, .children-escolar li a {
+        margin-left: 20px;
+    }
+
+    /* header nav ul li .caret {
+         float: right;
+     }*/
+}

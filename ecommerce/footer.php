@@ -1,7 +1,8 @@
+	</div>	
 		<script src="js/jquery-2.1.1.min.js"></script>   
-		<script src="js/bootstrap.min.js"></script> 
-        <script src="js/jquery.bxslider.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
+			<script src="js/bootstrap.min.js"></script> 
+			<script src="js/jquery.bxslider.min.js"></script>
+			<script src="js/owl.carousel.min.js"></script>
 	</body>
 	<script type="text/javascript">
 	$(document).ready(main);

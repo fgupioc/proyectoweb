@@ -1,0 +1,63 @@
+@media screen and (max-width: 800px) {
+    body {
+        padding-top: 80px;
+    }
+
+    .menu_bar {
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background: #E6344A;
+    }
+
+    .menu_bar .bt-menu {
+        display: block;
+        padding: 20px;
+        color: #fff;
+        overflow: hidden;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .menu_bar span {
+        float: right;
+        font-size: 40px;
+    }
+
+    header nav {
+        width: 80%;
+        height: calc(100% - 80px);
+        position: fixed;
+        right: 100%;
+        margin: 0;
+        overflow: scroll;
+    }
+
+    .lista-menu li {
+        display: block;
+        border-bottom: 1px solid rgba(255, 255, 255, .5);
+    }
+
+    .lista-menu li a {
+        display: block;
+    }
+
+    .lista-menu li:hover .children-hombre, li:hover .children-mujer, li:hover .children-boy, li:hover .children-deporte, li:hover .children-escolar {
+        display: none;
+    }
+
+    .lista-menu li .children-hombre, .children-mujer, .children-boy, .children-deporte, .children-escolar {
+        width: 100%;
+        position: relative;
+    }
+
+    .lista-menu li .children-hombre li a, .children-mujer li a, .children-boy li a, .children-deporte li a, .children-escolar li a {
+        margin-left: 20px;
+    }
+
+    /* header nav ul li .caret {
+         float: right;
+     }*/
+}
